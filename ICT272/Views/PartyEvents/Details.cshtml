@@ -1,0 +1,34 @@
+﻿@model ICT272.Models.PartyEvent
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PartyEvent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PartyType.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PartyType.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PartyEventID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
